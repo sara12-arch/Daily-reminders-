@@ -1,40 +1,41 @@
 const content = document.getElementById('content');
-
-    const quotes = [
+const quotes = [
   "Freedom is nothing but a chance to be better.",
   "And it's inside myself that I must create someone who will understand.",
-  "The human heart has a tiresome tendency to label as fate only what crushes it.",
+  "The human heart has a tiresome tendency to label as fate only what crushes it. But happiness likewise, in its way, is without reason, since it is inevitable.",
   "I have spent all my life resisting the desire to end it.",
-  "I miss you deeply, unfathomably, senselessly, terribly. – Franz Kafka, Letters to Milena",
-  "Maybe home is nothing but two arms holding you tight when you're at your worst.",
-  "You are not too much. You were never too much. You are enough.",
-  "Sometimes the right path is not the easiest one. – Grandmother Willow",
-  "In the depths of winter, I found there was, within me, an invincible summer. – Camus",
-  "It's okay to be a glowstick: sometimes we have to break before we shine.",
-  "Nothing ever goes away until it has taught us what we need to know. – Pema Chödrön",
-  "You deserve a love that feels like quiet mornings and gentle understanding.",
-  "Be patient where you sit in the dark. The dawn is coming. – Rumi",
-  "Even the softest soul can be a storm in disguise.",
-  "She was unstoppable not because she did not have failures or doubts, but because she continued on.",
-  "Sometimes, the bravest thing you can do is ask for help.",
-  "To love and be loved is to feel the sun from both sides. – David Viscott",
-  "Your broken pieces are still part of your masterpiece.",
-  "You are allowed to outgrow people, places, and versions of yourself.",
-  "Healing is not linear, and that’s okay.",
-  "There’s a crack in everything. That’s how the light gets in. – Leonard Cohen",
-  "Rest is not a reward. It’s a necessity.",
-  "Your worth is not measured by your productivity.",
-  "It’s okay to restart and rebuild. You’re not behind.",
-  "Sometimes, soft is strong.",
-  "Let yourself be silently drawn by the strange pull of what you really love. – Rumi",
-  "You are not a burden. You are a human being with needs.",
-  "Breathe. This moment is for you.",
-  "Let go of who you think you should be. Embrace who you are.",
-  "Give yourself the same grace you offer to others.",
-  "You’re doing better than you think.",
-  "You’re still here. That matters more than you know."
+  "I miss you deeply, unfathomably, senselessly, terribly. – Franz Kafka",
+  "In the midst of winter, I found there was within me an invincible summer.",
+  "You are allowed to be both a masterpiece and a work in progress at the same time.",
+  "Some feelings you will never find the words for; you will learn to name them after the ones who gave them to you.",
+  "It’s okay to be soft. It’s okay to rest. Growth is quiet too.",
+  "Healing is not linear, but you are healing.",
+  "Be proud of how you’ve been handling these past months — silently fighting battles, healing, and growing.",
+  "Sometimes showing up is the most courageous thing you can do.",
+  "It is enough to do your best, even when it goes unnoticed.",
+  "Even the moon goes through phases; you don’t have to be full all the time.",
+  "Let it hurt. Let it heal. Let it go.",
+  "You are not behind. You’re exactly where you need to be.",
+  "Trust the timing of your life — you’re growing even when it feels like you’re standing still.",
+  "Give yourself permission to slow down today.",
+  "Rest is productive too.",
+  "A small step forward is still a step forward.",
+  "You are more than what is hurting you.",
+  "You survived 100% of your worst days. That’s not nothing.",
+  "You are not alone in how you feel. Even when it feels like it.",
+  "Grief is a form of love too. Don’t rush it.",
+  "There’s no shame in beginning again.",
+  "Let today be a soft place to land.",
+  "It’s okay if all you did today was breathe.",
+  "You don’t have to be perfect to be worthy of love.",
+  "You're allowed to outgrow people, places, and patterns.",
+  "You're doing better than you think.",
+  "You're still here. That matters more than you know."
 ];
 
+const quoteIndex = new Date().getDate() - 1;
+const quoteOfTheDay = quotes[quoteIndex] || "You’re doing your best. That’s enough.";
+document.getElementById("quote").innerText = quoteOfTheDay;
 function showSection(section) {
     if (section === 'quotes') {
         const date = new Date();
