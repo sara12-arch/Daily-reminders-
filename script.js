@@ -1,37 +1,38 @@
 const content = document.getElementById('content');
 
-const quotes = [
-    "Freedom is nothing but a chance to be better.",
-    "And it's inside myself that I must create someone who will understand.",
-    "The human heart has a tiresome tendency to label as fate only what crushes it.",
-    "I have spent all my life resisting the desire to end it.",
-    "I miss you deeply, unfathomably, senselessly, terribly.",
-    "Quote of the day 6",
-    "Quote of the day 7",
-    "Quote of the day 8",
-    "Quote of the day 9",
-    "Quote of the day 10",
-    "Quote of the day 11",
-    "Quote of the day 12",
-    "Quote of the day 13",
-    "Quote of the day 14",
-    "Quote of the day 15",
-    "Quote of the day 16",
-    "Quote of the day 17",
-    "Quote of the day 18",
-    "Quote of the day 19",
-    "Quote of the day 20",
-    "Quote of the day 21",
-    "Quote of the day 22",
-    "Quote of the day 23",
-    "Quote of the day 24",
-    "Quote of the day 25",
-    "Quote of the day 26",
-    "Quote of the day 27",
-    "Quote of the day 28",
-    "Quote of the day 29",
-    "Quote of the day 30",
-    "Quote of the day 31"
+    const quotes = [
+  "Freedom is nothing but a chance to be better.",
+  "And it's inside myself that I must create someone who will understand.",
+  "The human heart has a tiresome tendency to label as fate only what crushes it.",
+  "I have spent all my life resisting the desire to end it.",
+  "I miss you deeply, unfathomably, senselessly, terribly. – Franz Kafka, Letters to Milena",
+  "Maybe home is nothing but two arms holding you tight when you're at your worst.",
+  "You are not too much. You were never too much. You are enough.",
+  "Sometimes the right path is not the easiest one. – Grandmother Willow",
+  "In the depths of winter, I found there was, within me, an invincible summer. – Camus",
+  "It's okay to be a glowstick: sometimes we have to break before we shine.",
+  "Nothing ever goes away until it has taught us what we need to know. – Pema Chödrön",
+  "You deserve a love that feels like quiet mornings and gentle understanding.",
+  "Be patient where you sit in the dark. The dawn is coming. – Rumi",
+  "Even the softest soul can be a storm in disguise.",
+  "She was unstoppable not because she did not have failures or doubts, but because she continued on.",
+  "Sometimes, the bravest thing you can do is ask for help.",
+  "To love and be loved is to feel the sun from both sides. – David Viscott",
+  "Your broken pieces are still part of your masterpiece.",
+  "You are allowed to outgrow people, places, and versions of yourself.",
+  "Healing is not linear, and that’s okay.",
+  "There’s a crack in everything. That’s how the light gets in. – Leonard Cohen",
+  "Rest is not a reward. It’s a necessity.",
+  "Your worth is not measured by your productivity.",
+  "It’s okay to restart and rebuild. You’re not behind.",
+  "Sometimes, soft is strong.",
+  "Let yourself be silently drawn by the strange pull of what you really love. – Rumi",
+  "You are not a burden. You are a human being with needs.",
+  "Breathe. This moment is for you.",
+  "Let go of who you think you should be. Embrace who you are.",
+  "Give yourself the same grace you offer to others.",
+  "You’re doing better than you think.",
+  "You’re still here. That matters more than you know."
 ];
 
 function showSection(section) {
@@ -65,3 +66,4 @@ function showSection(section) {
             </ul>`;
     }
 }
+
