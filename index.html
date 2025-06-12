@@ -1,23 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Daily Reminder</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.jpeg" type="image/jpeg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Reminder App</title>
+  <link rel="icon" href="icon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpeg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Playfair Display', serif;
+      color: #e6b8d6;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #e6b8d6;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      background-color: #fdfdfd;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      background-color: #e6b8d6;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d49dc4;
+    }
+  </style>
 </head>
 <body>
-    <div class="app">
-        <h1>Daily Reminder</h1>
-        <div class="section" onclick="showSection('quotes')">🌸 Daily Quotes</div>
-        <div class="section" onclick="showSection('work')">📋 Work</div>
-        <div class="section" onclick="showSection('selfcare')">🧘 Self Care</div>
-        <div class="section" onclick="showSection('health')">❤️ Health</div>
-        
-        <div id="content" class="content"></div>
-    </div>
-    <script src="script.js"></script>
+  <h1>My Daily Reminder</h1>
+
+  <div class="section">
+    <h2>Daily Quote</h2>
+    <p id="dailyQuote">Loading quote...</p>
+  </div>
+
+  <div class="section">
+    <h2>Work</h2>
+    <textarea id="workInput" placeholder="Write your work notes..."></textarea>
+    <button onclick="saveNote('work')">Save</button>
+  </div>
+
+  <div class="section">
+    <h2>Health</h2>
+    <textarea id="healthInput" placeholder="Write your health notes..."></textarea>
+    <button onclick="saveNote('health')">Save</button>
+  </div>
+
+  <div class="section">
+    <h2>Self Care</h2>
+    <textarea id="selfCareInput" placeholder="Write your self-care notes..."></textarea>
+    <button onclick="saveNote('selfCare')">Save</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
